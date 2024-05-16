@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dictionary Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-X04NN22492"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="start-screen">
+                <h1>Select Timer Duration</h1>
+                <button class="timer-option" data-time="1">1 Minute</button>
+                <button class="timer-option" data-time="5">5 Minutes</button>
+                <button class="timer-option" data-time="10">10 Minutes</button>
+            </div>
+
+            <div id="game-container" style="display: none">
+                <h1>Dictionary Game</h1>
+                <div id="timer">Time: <span id="time">1:00</span></div>
+                <input type="text" id="word-input" placeholder="Enter a word" />
+                <div id="message"></div>
+                <div id="score">Score: <span id="score-count">0</span></div>
+            </div>
+
+            <div id="end-screen" style="display: none">
+                <h1>Thank you for playing!</h1>
+                <p>Your score: <span id="final-score"></span></p>
+                <button id="restart-button">Restart</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
